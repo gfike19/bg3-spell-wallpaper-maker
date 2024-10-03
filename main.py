@@ -1,5 +1,4 @@
 import os
-import shutil
 import random
 from PIL import Image
 
@@ -93,7 +92,7 @@ def save_wallpaper(wallpaper, output_folder='.', base_filename='wallpaper.png'):
 
 def main():
     source_folder = './spell-images'  # Folder containing the spell icons
-    output_folder = '.'  # Save in the current directory
+    output_folder = './generated-images'  # Save in the current directory
 
     # Step 1: Find unique images in the "spell-images" folder
     icon_images = find_unique_icons(source_folder)
